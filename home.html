@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="request.js"></script>
+    
+</head>
+<body style="width: 90%;">
+    
+    <div class="testbox">
+        <form >
+          <div class="heading">
+            <h1>Email Spam Trigger Words Checker Tool</h1>
+            <h3 style="font-weight: 500;">Copy your newsletter content including the subject line and paste it in the box below and then click on the scan button. The tool will run background checks for any spam trigger words in your newsletter and post scan results below the scan button.  </h3>
+          </div>
+          <div class="colums">
+        
+              <label for="myTextField" style="font-weight: 600;font-size: large;"> Keyword<span>*</span></label>
+              <textarea id="myTextField" type="text" style="height: 200px;width: 100%;" name="myTextField" placeholder="Paste your newsletter content here" required></textarea>
+            
+          </div>
+          <div class="btn-block">
+            <button id="submitSpamChecker" >Scan</button>
+          </div>
+          
+            <p id="title2" style="padding: 1%;text-align: justify;"></p>
+          
+            <div class="btn-block">
+              <button id="empty" >Clear Results</button>
+            </div>
+        </form>
+      </div>
+      
+</body>
+</html>
